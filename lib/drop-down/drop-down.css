@@ -1,0 +1,10 @@
+paper-menu-button::shadow #menu{
+  color: black !important;
+  background: white;
+    padding-left: 8px !important;
+  padding-right: 8px !important;
+}
+paper-menu-button::shadow .paper-menu-button-overlay-bg{
+  background: transparent !important;
+
+}

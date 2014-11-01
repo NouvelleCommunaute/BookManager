@@ -1,16 +1,22 @@
-<!DOCTYPE html>
+<!--
+  Copyright (c) 2014, Nouvelle Communauté. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
 
-<html>
-  <head>
-  	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>drop_down</title>
-  </head>
- 
-  <body>   
-    <p id="text"></p>
-    <script type="application/dart" src="drop-down.dart"></script>
-    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
-    <script src="packages/browser/dart.js"></script>
-  </body>
-</html>
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<link rel="import" href="../../../packages/paper_elements/paper_menu_button.html">
+
+
+<polymer-element name="drop-down">
+  <template>
+    <paper-menu-button icon="more-vert" id="drop-down" halign="right">
+      <div>Menu Item 1</div>
+      <div>Menu Item 2</div>
+      <div>Menu Item 3</div>
+    </paper-menu-button> 
+    <link type="text/css" rel="stylesheet" href="drop-down.css">
+  </template>
+  <script type="application/dart" src="drop-down.dart"></script>
+</polymer-element>
