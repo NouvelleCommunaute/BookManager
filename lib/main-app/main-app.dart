@@ -8,7 +8,21 @@ import 'package:polymer/polymer.dart';
 class MainApp extends PolymerElement {
 
   MainApp.created() : super.created() {
-
-     
+    var coreDrawer = $['drawerPanel'];
+        coreDrawer.addEventListener('core-responsive-change', (e) {
+          if($['drawerPanel'].narrow){
+            $['toggleDrawerButton'].style.display = 'block';
+          } else {
+            $['toggleDrawerButton'].style.display = 'none';
+          }
+        });
   }
+
+  toggleDrawer() {
+      $['drawerPanel'].togglePanel();
+  }
+  
+  
+  
+  
 }
