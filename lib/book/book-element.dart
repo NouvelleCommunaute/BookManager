@@ -4,9 +4,9 @@
 import 'package:polymer/polymer.dart';
 
 /// A Polymer <main-app> element.
-@CustomTag('kniha')
-class Kniha extends PolymerElement {
+@CustomTag('book-element')
+class BookElement extends PolymerElement {
 
-  Kniha.created() : super.created();
+  BookElement.created() : super.created();
 
 }
