@@ -20,7 +20,7 @@
 <link rel="import" href="../../../packages/paper_elements/paper_slider.html">
 <link rel="import" href="../../../packages/paper_elements/paper_toast.html">
 
-<link rel="import" href="../profile/profile-element.html" />
+<link rel="import" href="../profile-element/profile-element.html" />
 <polymer-element name="main-app">
   <template>
 <core-drawer-panel responsiveWidth="600px" id="drawerPanel">
@@ -43,9 +43,11 @@
           <paper-fab style="bottom: -75px;" icon="icons:add"></paper-fab>
         </core-toolbar>
         
+        <profile-element></profile-element>
+        
       </core-header-panel>
+      
     </core-drawer-panel>
-    <profile-element></profile-element>
     <link type="text/css" rel="stylesheet" href="main-app.css">
   </template>
   <script type="application/dart" src="main-app.dart"></script>

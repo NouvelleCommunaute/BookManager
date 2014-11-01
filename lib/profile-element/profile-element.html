@@ -10,12 +10,12 @@
 <polymer-element name="profile-element">
   <template>
     <div class="profile-header" layout horizontal center bind="{{profile}}">
-      <img src="{{img.url}}" alt="{{img.alt}}" />
-      <h1>{{name}}</h1>
-      <p>{{description}}</p>
+      <img src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}" />
+      <h1>{{profile["name"]}}</h1>
+      <p>{{profile['description']}}</p>
       <div class="bottom-info">
-        <h3>{{email}}</h3>
-        <h3>{{url}}</h3>
+        <h3>{{profile['email']}}</h3>
+        <h3>{{profile['url']}}</h3>
       </div>
     </div>   
     <paper-button>Friends</paper-button>

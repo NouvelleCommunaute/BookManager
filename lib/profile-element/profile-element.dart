@@ -10,7 +10,7 @@ import 'dart:html';
 class ProfileElement extends PolymerElement {
 
   @observable
-  Object profile;
+  Object profile = {'name' : 'HoBi'};
   
   ProfileElement.created()
     : super.created() {

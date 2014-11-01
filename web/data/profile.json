@@ -1,8 +1,7 @@
-{
-  "profile":
+
   {
     "img": {
-      "url" : "images/avatar-01.jpg",
+      "url" : "images/avatar-01.svg",
       "alt": "profile-image"
     },
     "name" : "Hobi",
@@ -10,4 +9,3 @@
     "email": "hb@nuvel.eu",
     "url": "honzabittner.eu"
   }
-}
