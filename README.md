@@ -1,4 +1,4 @@
-# {{ projectName }}
+# Book Manager
 
 A starter template for a polymer.dart web app.
 
