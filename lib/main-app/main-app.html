@@ -20,7 +20,10 @@
 <link rel="import" href="../../../packages/paper_elements/paper_slider.html">
 <link rel="import" href="../../../packages/paper_elements/paper_toast.html">
 
+
+<link rel="import" href="../drop-down/drop-down.html">
 <link rel="import" href="../profile-element/profile-element.html" />
+
 <polymer-element name="main-app">
   <template>
 <core-drawer-panel responsiveWidth="600px" id="drawerPanel">
@@ -38,7 +41,7 @@
         <core-toolbar horizontal end-justified layout>
           <paper-icon-button icon="menu"></paper-icon-button>
           <paper-icon-button icon="search"></paper-icon-button>
-          <paper-icon-button icon="more-vert"></paper-icon-button>
+          <drop-down></drop-down>
         </core-toolbar>
         
         <profile-element></profile-element>

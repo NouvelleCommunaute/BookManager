@@ -11,8 +11,8 @@
 
 <polymer-element name="profile-element">
   <template>
-    <div class="profile-header" layout center bind="{{profile}}">
-      <img z="5" id="profile" src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}" />
+    <div class="profile-header" center>
+      <img id="profile" src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}" />
       <h1>{{profile["name"]}}</h1>
       <p>{{profile['description']}}</p>
       <div class="bottom-info">
@@ -21,6 +21,12 @@
       </div>
     </div>   
     <paper-button>Friends</paper-button>
+    
+    <div class='book-lists'>
+    <template repeat="{{list in profile['lists']}}">
+      <list-item-element list="{{list}}"></list-item-element>
+    </template>
+    </div>
 
     <link type="text/css" rel="stylesheet" href="../element-style.css">
     <link type="text/css" rel="stylesheet" href="profile-element.css">

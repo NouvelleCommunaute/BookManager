@@ -12,9 +12,7 @@ class ProfileElement extends PolymerElement {
   @observable
   Object profile = {'name' : 'HoBi'};
   
-  ProfileElement.created()
-    : super.created() {
-    
+  ProfileElement.created() : super.created() {
     this.makeRequest();
   }
 

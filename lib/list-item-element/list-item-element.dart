@@ -7,6 +7,12 @@ import 'package:polymer/polymer.dart';
 @CustomTag('list-item-element')
 class ListItemElement extends PolymerElement {
 
+  @published Object list;
+  
   ListItemElement.created() : super.created();
+  
+  num bookNumber() {
+    return (this.list['books'] as List).length;
+  }
 
 }
