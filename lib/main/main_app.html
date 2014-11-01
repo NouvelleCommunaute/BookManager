@@ -1,0 +1,51 @@
+<!--
+  Copyright (c) 2014, Nouvelle Communauté. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<link rel="import" href="../../../packages/core_elements/core_drawer_panel.html">
+<link rel="import" href="../../../packages/core_elements/core_header_panel.html">
+<link rel="import" href="../../../packages/core_elements/core_toolbar.html">
+<link rel="import" href="../../../packages/core_elements/core_icons.html">
+<link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_fab.html">
+<link rel="import" href="../../../packages/paper_elements/paper_input.html">
+<link rel="import" href="../../../packages/paper_elements/paper_checkbox.html">
+<link rel="import" href="../../../packages/core_elements/core_item.html">
+<link rel="import" href="../../../packages/paper_elements/paper_toggle_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_slider.html">
+<link rel="import" href="../../../packages/paper_elements/paper_toast.html">
+
+<polymer-element name="main-app">
+  <template>
+<core-drawer-panel responsiveWidth="600px" id="drawerPanel">
+      <core-header-panel drawer>
+        <core-toolbar>Menu</core-toolbar>
+        
+        <core-item>
+         
+        </core-item>
+        
+        <paper-toast id="toast" class="capsule" text="Settings have been reset!" duration="800"></paper-toast>
+      </core-header-panel>
+
+      <core-header-panel main>
+        <core-toolbar>
+          <span flex>Name</span>
+          <paper-icon-button icon="menu"></paper-icon-button>
+          <paper-icon-button icon="search"></paper-icon-button>
+          <paper-icon-button icon="more-vert"></paper-icon-button>
+          <paper-fab style="bottom: -75px;" icon="icons:add"></paper-fab>
+        </core-toolbar>
+        
+      </core-header-panel>
+    </core-drawer-panel>
+    
+    <link type="text/css" rel="stylesheet" href="main-app.css">
+  </template>
+  <script type="application/dart" src="main_app.dart"></script>
+</polymer-element>
