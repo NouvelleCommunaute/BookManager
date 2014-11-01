@@ -9,20 +9,17 @@
 <link rel="import" href="../list-item-element/list-item-element.html">
 <polymer-element name="profile-element">
   <template>
-    <div class="profile-header" layout horizontal center>
-      <img src="{{profile.img.url}}" alt="profile.img.alt" />
-      <h1>{{profile.name}}</h1>
-      <p>{{profile.description}}</p>
+    <div class="profile-header" layout horizontal center bind="{{profile}}">
+      <img src="{{img.url}}" alt="{{img.alt}}" />
+      <h1>{{name}}</h1>
+      <p>{{description}}</p>
       <div class="bottom-info">
-        <h3>{{profile.email}}</h3>
-        <h3>{{profile.url}}</h3>
+        <h3>{{email}}</h3>
+        <h3>{{url}}</h3>
       </div>
     </div>   
     <paper-button>Friends</paper-button>
-    <div class="book-list" repeat="{{bookLists}}">
-      <list-item-element bind="bookLists"></list-item-element>
-    </div>
-    
+
     <link type="text/css" rel="stylesheet" href="profile-element.css">
   </template>
   <script type="application/dart" src="profile-element.dart"></script>
