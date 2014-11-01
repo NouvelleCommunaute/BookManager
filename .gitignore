@@ -1,16 +1,7 @@
-# Don’t commit the following directories created by pub.
-build/
-packages/
+.DS_Store
+.idea
+.pub/
 .buildlog
-
-# Or the files created by dart2js.
-*.dart.js
-*.dart.precompiled.js
-*.js_
-*.js.deps
-*.js.map
-
-.idea/
-
-# Include when developing application packages.
+build/
+packages
 pubspec.lock
