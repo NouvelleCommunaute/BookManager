@@ -19,7 +19,7 @@ class ListItemElement extends PolymerElement {
   void domReady() {
         for(DivElement element in shadowRoot.querySelectorAll('.item')) {
           Element el = element.children[0];
-          element..onMouseEnter.listen((e) => el.attributes['z'] = '3')
+          element..onMouseEnter.listen((e) => el.attributes['z'] = '2')
                    ..onMouseLeave.listen((e) => el.attributes['z'] = '1');
             }
   }

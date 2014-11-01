@@ -2,7 +2,7 @@
 /* is governed by a BSD-style license that can be found in the LICENSE file. */
 
 [drawer] {
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 
 [main] > div {
@@ -19,7 +19,7 @@
 
 [main] {
   height: 100%;
-  background-color: #f1f1f3;
+  background-color: #fff;
 }
 
 [drawer] core-toolbar {
@@ -48,12 +48,17 @@ paper-fab {
   position: relative;
 }
 
+#core-menu {
+  margin: 12px 0;  
+}
+
 *[data-fade-selected="true"] .item[data-done="true"] {
   opacity: 0.3;
 }
 
 paper-button[raisedButton].colored {
   width: 100%;
+  margin: 0;
   background: #4285f4;
   color: #fff;
   fill: #fff;
