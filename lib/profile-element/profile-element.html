@@ -10,26 +10,28 @@
 <link rel="import" href="../list-item-element/list-item-element.html">
 
 <polymer-element name="profile-element">
-  <template>
-    <div class="profile-header" center>
-      <img id="profile" src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}" />
-      <h1>{{profile["name"]}}</h1>
-      <p>{{profile['description']}}</p>
-      <div class="bottom-info">
-        <h3>{{profile['email']}}</h3>
-        <h3>{{profile['url']}}</h3>
-      </div>
-    </div>   
-    <paper-button>Friends</paper-button>
-    
-    <div class='book-lists'>
-    <template repeat="{{list in profile['lists']}}">
-      <list-item-element list="{{list}}"></list-item-element>
-    </template>
-    </div>
+    <template>
+        <div class="profile">
+            <div class="profile-header" center>
+                <img id="profile" src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}"/>
+                <h1>{{profile["name"]}}</h1>
+                <p>{{profile['description']}}</p>
+                <div class="bottom-info">
+                    <h3>{{profile['email']}}</h3>
+                    <h3>{{profile['url']}}</h3>
+                </div>
+            </div>
+            <paper-button>Friends</paper-button>
+            <h2>Favourite lists</h2>
+            <div class='book-lists'>
+                <template repeat="{{list in profile['lists']}}">
+                    <list-item-element list="{{list}}"></list-item-element>
+                </template>
+            </div>
+        </div>
 
-    <link type="text/css" rel="stylesheet" href="../element-style.css">
-    <link type="text/css" rel="stylesheet" href="profile-element.css">
-  </template>
-  <script type="application/dart" src="profile-element.dart"></script>
+        <link type="text/css" rel="stylesheet" href="../element-style.css">
+        <link type="text/css" rel="stylesheet" href="profile-element.css">
+    </template>
+    <script type="application/dart" src="profile-element.dart"></script>
 </polymer-element>

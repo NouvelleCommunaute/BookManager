@@ -4,11 +4,16 @@
  :host {
   display: block;
   position: relative;
-  background-color: white;
   padding: 20px;
   width: 100%;
   font-size: 1.2rem;
   font-weight: 300;
+  box-sizing: border-box;
+}
+
+.profile {
+  width: 80%;
+  margin: 0 auto;
 }
 
 #profile {
@@ -19,7 +24,16 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.5);
-  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.5);
-  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.5);
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+  padding: 10px;
 }
+
+.bottom-info h3 {
+  width: 49%;
+  border: 0;
+  text-align: center;
+  display: inline-block;
+}
+
