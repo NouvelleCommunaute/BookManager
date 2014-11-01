@@ -19,6 +19,7 @@
 <link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
 <link rel="import" href="../../../packages/paper_elements/paper_slider.html">
 <link rel="import" href="../../../packages/paper_elements/paper_toast.html">
+<link rel="import" href="../../../packages/paper_elements/paper_item.html">
 
 
 <link rel="import" href="../drop-down/drop-down.html">
@@ -30,9 +31,11 @@
       <core-header-panel drawer>
         <core-toolbar>Menu</core-toolbar>
         
-        <core-item>
-          asdasd
-        </core-item>
+        <core-menu id="core-menu">
+          <paper-item label="Refresh" ><paper-shadow z="0" animated></paper-shadow></paper-item>
+          <paper-item label="Help"><paper-shadow z="0" animated></paper-shadow></paper-item>
+          <paper-item label="Sign Out"><paper-shadow z="0" animated></paper-shadow></paper-item>
+        </core-menu>
         
         <paper-toast id="toast" class="capsule" text="Settings have been reset!" duration="800"></paper-toast>
       </core-header-panel>
