@@ -21,9 +21,9 @@
 <link rel="import" href="../../../packages/paper_elements/paper_toast.html">
 <link rel="import" href="../../../packages/paper_elements/paper_item.html">
 
-
 <link rel="import" href="../drop-down/drop-down.html">
 <link rel="import" href="../profile-element/profile-element.html" />
+<link rel="import" href="../input-search/input-search.html" />
 
 <polymer-element name="main-app">
   <template>
@@ -46,12 +46,11 @@
         <core-toolbar horizontal end-justified layout>
           <input-search></input-search>
           <paper-icon-button icon="menu" on-click="{{toggleDrawer}}" id="toggleDrawerButton"></paper-icon-button>
-          <paper-icon-button icon="search"></paper-icon-button>
           <drop-down></drop-down>
         </core-toolbar>
         
         <profile-element></profile-element>
-        
+        <paper-toast id="toast" class="capsule" text="Web site is still in development!" duration="2000"></paper-toast>
       </core-header-panel>
       
     </core-drawer-panel>

@@ -2,6 +2,7 @@
 // is governed by a BSD-style license that can be found in the LICENSE file.
 
 import 'package:polymer/polymer.dart';
+import 'dart:html';
 
 /// A Polymer <main-app> element.
 @CustomTag('main-app')
@@ -9,20 +10,25 @@ class MainApp extends PolymerElement {
 
   MainApp.created() : super.created() {
     var coreDrawer = $['drawerPanel'];
-        coreDrawer.addEventListener('core-responsive-change', (e) {
-          if($['drawerPanel'].narrow){
-            $['toggleDrawerButton'].style.display = 'block';
-          } else {
-            $['toggleDrawerButton'].style.display = 'none';
-          }
-        });
+    coreDrawer.addEventListener('core-responsive-change', (e) {
+      if ($['drawerPanel'].narrow) {
+        $['toggleDrawerButton'].style.display = 'block';
+      } else {
+        $['toggleDrawerButton'].style.display = 'none';
+      }
+    });
   }
 
   toggleDrawer() {
-      $['drawerPanel'].togglePanel();
+    $['drawerPanel'].togglePanel();
   }
-  
-  
-  
-  
+
+  void domReady() {
+    for (Element element in shadowRoot.querySelectorAll('#core-menu paper-item')) {
+      element.onClick.listen((e) {
+        $['toast'].show();
+      });
+    }
+  }
+
 }

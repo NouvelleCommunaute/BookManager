@@ -3,7 +3,7 @@
 
 import 'package:polymer/polymer.dart';
 
-/// A Polymer <list-item-element> element.
+/// A Polymer <input-search> element.
 @CustomTag('input-search')
 class InputSearch extends PolymerElement {
 

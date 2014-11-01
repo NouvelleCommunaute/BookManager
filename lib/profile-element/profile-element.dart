@@ -9,8 +9,7 @@ import 'dart:html';
 @CustomTag('profile-element')
 class ProfileElement extends PolymerElement {
 
-  @observable
-  Object profile = {'name' : 'HoBi'};
+  @observable Object profile;
   
   ProfileElement.created() : super.created() {
     this.makeRequest();
@@ -26,6 +25,5 @@ class ProfileElement extends PolymerElement {
   
   void loadJSON(String content) {
     this.profile = JSON.decode(content);
-    print(this.profile);
   }
 }

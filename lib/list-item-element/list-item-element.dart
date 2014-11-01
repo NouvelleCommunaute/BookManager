@@ -8,7 +8,7 @@ import 'dart:html';
 @CustomTag('list-item-element')
 class ListItemElement extends PolymerElement {
 
-  @published Object list;
+  @published Map list;
   
   HtmlElement _element;
   
