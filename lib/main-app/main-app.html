@@ -23,6 +23,7 @@
 
 <link rel="import" href="../drop-down/drop-down.html">
 <link rel="import" href="../profile-element/profile-element.html" />
+<link rel="import" href="../input-search/input-search.html">
 
 <polymer-element name="main-app">
   <template>
@@ -39,8 +40,8 @@
 
       <core-header-panel main>
         <core-toolbar horizontal end-justified layout>
+            <input-search></input-search>
           <paper-icon-button icon="menu"></paper-icon-button>
-          <paper-icon-button icon="search"></paper-icon-button>
           <drop-down></drop-down>
         </core-toolbar>
         
