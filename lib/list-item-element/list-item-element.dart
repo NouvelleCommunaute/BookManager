@@ -3,10 +3,10 @@
 
 import 'package:polymer/polymer.dart';
 
-/// A Polymer <main-app> element.
-@CustomTag('main-app')
-class MainApp extends PolymerElement {
+/// A Polymer <list-item-element> element.
+@CustomTag('list-item-element')
+class ListItemElement extends PolymerElement {
 
-  MainApp.created() : super.created();
+  ListItemElement.created() : super.created();
 
 }
