@@ -5,14 +5,17 @@
 
 <!-- import polymer-element's definition -->
 <link rel="import" href="../../../packages/polymer/polymer.html">
-
+<link rel="import" href="../../../packages/paper_elements/paper_ripple.html">
+<link rel="import" href="../../../packages/paper_elements/paper_shadow.html">
 <polymer-element name="list-item-element">
   <template>
-    <div class="item">
-      <h3>{{list['name']}}</h3>
-      <p>{{list['description']}}</p>
-      <span class="book-number">{{bookNumber}}</span>
-    </div>
+      <div class="item">
+        <paper-shadow z="1" animated></paper-shadow>
+          <paper-ripple fit></paper-ripple>
+          <h3>{{list['name']}}</h3>
+          <p>{{list['description']}}</p>
+          <span class="book-number">{{ bookNumber() }}</span>
+      </div>
     <link type="text/css" rel="stylesheet" href="list-item-element.css">
   </template>
   <script type="application/dart" src="list-item-element.dart"></script>
