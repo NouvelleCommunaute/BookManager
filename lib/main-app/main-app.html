@@ -19,11 +19,11 @@
 <link rel="import" href="../../../packages/paper_elements/paper_icon_button.html">
 <link rel="import" href="../../../packages/paper_elements/paper_slider.html">
 <link rel="import" href="../../../packages/paper_elements/paper_toast.html">
+<link rel="import" href="../../../packages/paper_elements/paper_item.html">
 
 
 <link rel="import" href="../drop-down/drop-down.html">
 <link rel="import" href="../profile-element/profile-element.html" />
-<link rel="import" href="../input-search/input-search.html">
 
 <polymer-element name="main-app">
   <template>
@@ -31,17 +31,19 @@
       <core-header-panel drawer>
         <core-toolbar>Menu</core-toolbar>
         
-        <core-item>
-         
-        </core-item>
+        <core-menu id="core-menu">
+          <paper-item label="Refresh" ></paper-item>
+          <paper-item label="Help"></paper-item>
+          <paper-item label="Sign Out"></paper-item>
+        </core-menu>
         
         <paper-toast id="toast" class="capsule" text="Settings have been reset!" duration="800"></paper-toast>
       </core-header-panel>
 
       <core-header-panel main>
         <core-toolbar horizontal end-justified layout>
-            <input-search></input-search>
-          <paper-icon-button icon="menu"></paper-icon-button>
+          <paper-icon-button icon="menu" on-click="{{toggleDrawer}}" id="toggleDrawerButton"></paper-icon-button>
+          <paper-icon-button icon="search"></paper-icon-button>
           <drop-down></drop-down>
         </core-toolbar>
         
