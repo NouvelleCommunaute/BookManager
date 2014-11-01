@@ -1,0 +1,26 @@
+/* Copyright (c) 2014, Nouvelle Communauté. All rights reserved. Use of this source code */
+/* is governed by a BSD-style license that can be found in the LICENSE file. */
+
+h1{
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+h3{
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;  
+}
+
+h4{
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;  
+}

@@ -6,11 +6,13 @@
 <!-- import polymer-element's definition -->
 <link rel="import" href="../../../packages/polymer/polymer.html">
 <link rel="import" href="../../../packages/paper_elements/paper_button.html">
+<link rel="import" href="../../../packages/paper_elements/paper_shadow.html">
 <link rel="import" href="../list-item-element/list-item-element.html">
+
 <polymer-element name="profile-element">
   <template>
-    <div class="profile-header" layout horizontal center bind="{{profile}}">
-      <img src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}" />
+    <div class="profile-header" layout center bind="{{profile}}">
+      <img z="5" id="profile" src="{{profile['img']['url']}}" alt="{{profile['img']['alt']}}" />
       <h1>{{profile["name"]}}</h1>
       <p>{{profile['description']}}</p>
       <div class="bottom-info">
@@ -20,6 +22,7 @@
     </div>   
     <paper-button>Friends</paper-button>
 
+    <link type="text/css" rel="stylesheet" href="../element-style.css">
     <link type="text/css" rel="stylesheet" href="profile-element.css">
   </template>
   <script type="application/dart" src="profile-element.dart"></script>
