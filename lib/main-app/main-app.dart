@@ -7,6 +7,23 @@ import 'package:polymer/polymer.dart';
 @CustomTag('main-app')
 class MainApp extends PolymerElement {
 
-  MainApp.created() : super.created();
+  MainApp.created() : super.created() {
+    var coreDrawer = $['drawerPanel'];
+        coreDrawer.addEventListener('core-responsive-change', (e) {
+          if($['drawerPanel'].narrow){
+            $['toggleDrawerButton'].style.display = 'block';
+          } else {
+            $['toggleDrawerButton'].style.display = 'none';
+          }
+        });
+     
+  }
 
+  toggleDrawer() {
+      $['drawerPanel'].togglePanel();
+  }
+  
+  
+  
+  
 }
