@@ -7,5 +7,22 @@
     "name" : "Hobi",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae blandit sapien. Nullam eget tortor at neque suscipit bibendum. Cras est augue, vehicula mattis convallis et, tincidunt ac urna. Phasellus velit risus, venenatis vitae mi sed, convallis ornare odio. Curabitur quis sagittis justo. Nullam venenatis ligula ipsum, sed tempus lorem tempor a. Cras a scelerisque sapien, a malesuada ante. Integer eu leo dui. Vivamus eget risus mi.",
     "email": "hb@nuvel.eu",
-    "url": "honzabittner.eu"
+    "url": "honzabittner.eu",
+    "lists" : {
+      "name": "Nej",
+      "description" : "Nejlepší knihy!",
+      "books" : [
+          {
+            "name" : "Book",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae blandit sapien.",
+            "image" : "images/avatar-}.svg"
+           },
+           {
+            "name" : "Book",
+            "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae blandit sapien.",
+            "image" : "images/avatar-}.svg"
+           },
+        ]
+      }
+    }
   }
