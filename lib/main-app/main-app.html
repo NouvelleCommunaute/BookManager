@@ -20,6 +20,9 @@
 <link rel="import" href="../../../packages/paper_elements/paper_slider.html">
 <link rel="import" href="../../../packages/paper_elements/paper_toast.html">
 
+<link rel="import" href="../drop-down/drop-down.html">
+
+
 <polymer-element name="main-app">
   <template>
 <core-drawer-panel responsiveWidth="600px" id="drawerPanel">
@@ -38,7 +41,8 @@
           <span flex>Name</span>
           <paper-icon-button icon="menu"></paper-icon-button>
           <paper-icon-button icon="search"></paper-icon-button>
-          <paper-icon-button icon="more-vert"></paper-icon-button>
+          <drop-down></drop-down>
+                    
           <paper-fab style="bottom: -75px;" icon="icons:add"></paper-fab>
         </core-toolbar>
         
