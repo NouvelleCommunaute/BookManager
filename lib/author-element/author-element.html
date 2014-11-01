@@ -1,0 +1,22 @@
+<!--
+  Copyright (c) 2014, Nouvelle Communauté. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../../packages/polymer/polymer.html">
+<link rel="import" href="../list-item-element/list-item-element.html">
+
+<polymer-element name="author-element">
+  <template>
+    <div class="author">
+      <img src="{{author.logo}}" alt="{{author.name}}"/>
+      <h1>{{author.name}}</h1>
+      <h2>Informace</h2>
+      <p>{{author.description}}</p>
+      <h2>Publikace</h2>
+      <list-item-element></list-item-element>
+    </div>
+  </template>
+  <script type="application/dart" src="author-element.dart"></script>
+</polymer-element>

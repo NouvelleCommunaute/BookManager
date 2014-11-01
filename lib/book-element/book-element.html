@@ -1,0 +1,24 @@
+<!--
+  Copyright (c) 2014, Nouvelle Communauté. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<polymer-element name="book-element">
+  <template>
+    <div class="book">
+      <div>
+        <img src="{{book.image[0]}}" alt="" />
+        <img src="{{book.image[1]}}" alt="" />
+        <img src="{{book.image[2]}}" alt="" />
+      </div>
+      <h1>{{book.name}}</h1>
+      <h4>{{book.status}}</h4>
+      <h3>Autor {{book.author}}</h3>
+      <p>{{book.description}}</p>
+    </div>
+  </template>
+  <script type="application/dart" src="book-element.dart"></script>
+</polymer-element>

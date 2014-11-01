@@ -1,0 +1,19 @@
+<!--
+  Copyright (c) 2014, Nouvelle Communauté. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../../packages/polymer/polymer.html">
+
+<polymer-element name="list-item-element">
+  <template>
+    <div class="item">
+      <h3>{{list.name}}</h3>
+      <p>{{list.description}}</p>
+      <span class="book-number">{{list.bookNumber}}</span>
+    </div>
+    <link type="text/css" rel="stylesheet" href="list-item-element.css">
+  </template>
+  <script type="application/dart" src="list-item-element.dart"></script>
+</polymer-element>
